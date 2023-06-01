@@ -61,6 +61,7 @@ function App() {
           Como extra podes probar usar prop-types si borras la linea 2 del
           componente.
         </li>
+        <li>Testear en mobile y desktop</li>
       </ol>
 
       <hr />
