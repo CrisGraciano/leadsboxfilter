@@ -1,0 +1,8 @@
+// App.scss// include customized bootstrap
+@import './scss/config'; // include all of Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import './scss/reset.scss';
+
+body {
+  background-color: rgb(247, 247, 247);
+}
