@@ -54,7 +54,11 @@ function App() {
         <li>Debe poder seleccionarse un reset de estado (all) </li>
         <li>
           Se debe mostar la cantidad de elementos existentes de cada tipo de
-          filtro
+          filtro. ej: Active (2)
+        </li>
+        <li>
+          Como extra podes probar usar prop-types si borras la linea 2 del
+          componente.
         </li>
       </ol>
 
