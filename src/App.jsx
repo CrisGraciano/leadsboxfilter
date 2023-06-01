@@ -56,6 +56,7 @@ function App() {
           Se debe mostar la cantidad de elementos existentes de cada tipo de
           filtro. ej: Active (2)
         </li>
+        <li>Se debe indicar cual chip ha sido seleccionada</li>
         <li>
           Como extra podes probar usar prop-types si borras la linea 2 del
           componente.
