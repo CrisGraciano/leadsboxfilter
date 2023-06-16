@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Buttons = () => {
+const Menu = () => {
     return (
         <div>
             
@@ -11,9 +11,9 @@ const Buttons = () => {
 };
 
 
-Buttons.propTypes = {
+Menu.propTypes = {
 
 };
 
 
-export default Buttons;
+export default Menu;
