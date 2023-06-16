@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.scss';
-import DbResponse from './JSON/getAllEstimatesResponse.json';
+import Estimates from './JSON/getAllEstimatesResponse.json';
 import FilterChips from './components/UI/FilterChips';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   // Procesa los datos para que puedas usarlos en el componente de la forma que quieras.
   // Los datos que te serviran son dentro de las quotes: status_label, status_class, quote_status_id
   // Y ME OLVIDE DE MOSTRATE: "quote_statuses" es un array de objetos que tiene los datos base los status.
-  const data = DbResponse;
+  const data = Estimates;
   console.log(data);
 
   // 2. Este es el array de objetos que se esta usando para mostrar los filtros. Te recomiendo crear uno nuevo a partir de los datos sin procesar con los datos extras necesarios cumplir los requirimientos.
@@ -70,6 +70,9 @@ function App() {
         Filter seleted: <strong>{filterSelected}</strong>{' '}
       </p>
     </div>
+    {
+      
+    }
   );
 }
 
