@@ -18,6 +18,17 @@ function App() {
       <h2 className="mb-5">Filter chips component</h2>
     </div>
   );
+  const [hits, setHits] = useState();
+
+  const filters = [
+    { label: 'All', value: 'All' },
+    { label: 'Active', value: 'Active' },
+    { label: 'Converted', value: 'Converted'},
+    { label: 'Declined', value: 'Declined'},
+    {label: 'Expired', value: 'Expired'},
+  ];
+
+  const 
 }
 
 export default App;
