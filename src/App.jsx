@@ -19,16 +19,35 @@ function App() {
     </div>
   );
   const [hits, setHits] = useState();
-
+  
   const filters = [
     { label: 'All', value: 'All' },
     { label: 'Active', value: 'Active' },
-    { label: 'Converted', value: 'Converted'},
-    { label: 'Declined', value: 'Declined'},
-    {label: 'Expired', value: 'Expired'},
+    { label: 'Converted', value: 'Converted' },
+    { label: 'Declined', value: 'Declined' },
+    { label: 'Expired', value: 'Expired' },
   ];
 
-  const 
+  const [selectedFilter, setSelectedFilter] = useState({
+    label: 'All',
+    value: 'All',
+  });
+
+  useEffect(() => {
+    const getEstimates = async () => {
+      const data = await fetchEstimates();
+      setHits(data);
+    };
+    if (selectedFilter.value === 'All') {
+      getEstimates();
+    }
+  }, [selectedFilter]);
+
+  const filterByChips = async (filter) => {
+    const data = await searchEstimateByFilter(filter.value);
+    setSelectedFilter(filter);
+    setHits(data);
+  };
 }
 
 export default App;
