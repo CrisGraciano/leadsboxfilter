@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchEstimates, searchEstimateByFilter } from './components/utils';
+import { fetchEstimates, searchEstimateByFilter } from './utils';
 
 // 1. Respuesta que obtenemos del servidor en formato JSON.
 // Podes verla en la consola del navegador.
@@ -11,7 +11,7 @@ import { fetchEstimates, searchEstimateByFilter } from './components/utils';
 // Tene en cuenta al procesar los datos que te da el servidor, que el valor de "value" tiene que ser unico (por eso no solo usamos Active, etc).
 // El valor de "label" es el que se muestra en pantalla.
 // Extra: el valor no necesariamente es una sola pablabra, puede ser un string con espacios, como "partially paid".
-function App() {
+export default function App() {
   return (
     <div className="App m-5">
       <h1>Hello LeadsBox!</h1>

@@ -1,4 +1,4 @@
-import estimates from '../JSON/getAllEstimatesResponse.json';
+import estimates from './JSON/getAllEstimatesResponse.json';
 
 // fetch all estimates from json file
 export async function fetchEstimates() {
